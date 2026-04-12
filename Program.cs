@@ -1,38 +1,55 @@
-﻿internal class Program
+﻿using System;
+
+class Program
 {
-    private static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Dia de La Semana");
+        int num;
 
-        int dia;
-        dia = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Ingrese un número del 1 al 12: ");
+        num = int.Parse(Console.ReadLine());
 
-        switch (dia)
+        switch (num)
         {
             case 1:
-                Console.WriteLine("Lunes");
+                Console.WriteLine("Enero - 31 días");
                 break;
             case 2:
-                Console.WriteLine("Martes");
+                Console.WriteLine("Febrero - 28 días");
                 break;
             case 3:
-                Console.WriteLine("miercoles");
+                Console.WriteLine("Marzo - 31 días");
                 break;
             case 4:
-                Console.WriteLine("jueves");
+                Console.WriteLine("Abril - 30 días");
                 break;
             case 5:
-                Console.WriteLine("viernes");
+                Console.WriteLine("Mayo - 31 días");
                 break;
             case 6:
-                Console.WriteLine("sabado");
+                Console.WriteLine("Junio - 30 días");
                 break;
             case 7:
-                Console.WriteLine("Domingo");
+                Console.WriteLine("Julio - 31 días");
+                break;
+            case 8:
+                Console.WriteLine("Agosto - 31 días");
+                break;
+            case 9:
+                Console.WriteLine("Septiembre - 30 días");
+                break;
+            case 10:
+                Console.WriteLine("Octubre - 31 días");
+                break;
+            case 11:
+                Console.WriteLine("Noviembre - 30 días");
+                break;
+            case 12:
+                Console.WriteLine("Diciembre - 31 días");
                 break;
             default:
-                Console.WriteLine("Digite un numero del 1 al 7");
+                Console.WriteLine("Número inválido");
                 break;
         }
-        }
+    }
 }
